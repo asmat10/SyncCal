@@ -1,0 +1,4 @@
+# pip install --upgrade google-api-python-client
+# pip install --upgrade google-auth-httplib2
+# pip install --upgrade google-auth-oauthlib
+# pip install --upgrade pymongo
