@@ -15,7 +15,10 @@ pip install google-api-python-client
 ```
 
 ## 2. Vorbereitung MongoDB
-blub
+```python
+pip install pymongo
+
+```
 
 ## 3. Software Architektur
 blub
