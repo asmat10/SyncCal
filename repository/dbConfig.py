@@ -6,15 +6,16 @@ from pymongo import MongoClient
 
 from pymongo.mongo_client import MongoClient
 
-uri = "mongodb+srv://admin:admin@cluster0.7mczdvg.mongodb.net/?retryWrites=true&w=majority"
+def db_connection_test():
+    uri = "mongodb+srv://admin:admin@cluster0.7mczdvg.mongodb.net/?retryWrites=true&w=majority"
 
 # Create a new client and connect to the server
-client = MongoClient(uri)
+    client = MongoClient(uri)
 
 # Send a ping to confirm a successful connection
-try:
-    client.admin.command('ping')
-    print("Pinged your deployment. You successfully connected to MongoDB!")
-    print(client.list_database_names())
-except Exception as e:
-    print(e)
+    try:
+        client.admin.command('ping')
+        print("Pinged your deployment. You successfully connected to MongoDB!")
+        print(client.list_database_names())
+    except Exception as e:
+        print(e)

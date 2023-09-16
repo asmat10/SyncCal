@@ -1,3 +1,4 @@
+from SyncCal.repository.dbConfig import db_connection_test
 def importer_service(events):
     for event in events:
         print(events)
@@ -17,3 +18,5 @@ def importer_service(events):
         print(f'Startzeit: {entry["Startzeit"]}, Zusammenfassung: {entry["Zusammenfassung"]}')
 
 
+        # Hier werden wir später die Liste zum speichern an die DB senden, vor erst starten wir damit nur den Ping test
+        db_connection_test();
