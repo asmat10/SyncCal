@@ -9,6 +9,7 @@ from pymongo.mongo_client import MongoClient
 def db_connection_test():
     uri = "mongodb+srv://admin:admin@cluster0.7mczdvg.mongodb.net/?retryWrites=true&w=majority"
 
+
 # Create a new client and connect to the server
     client = MongoClient(uri)
 
@@ -19,3 +20,6 @@ def db_connection_test():
         print(client.list_database_names())
     except Exception as e:
         print(e)
+
+#if __name__ == '__main__':
+ #   db_connection_test()
